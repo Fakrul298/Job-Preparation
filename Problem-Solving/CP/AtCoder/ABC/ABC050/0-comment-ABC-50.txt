@@ -1,0 +1,3 @@
+A: too much easy (solved)
+B: easy, solved in 15 minutes
+C: 1.can't understand the problem to solve manually

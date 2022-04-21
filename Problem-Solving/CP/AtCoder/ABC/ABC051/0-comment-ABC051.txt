@@ -1,0 +1,3 @@
+A: Too easy
+B: 1.seems not solvable, can't find the manual soln with the time limit, naive n^3 soln is of TLE
+   2. solved by seeing the soln after 1 hr of trying which was in vain

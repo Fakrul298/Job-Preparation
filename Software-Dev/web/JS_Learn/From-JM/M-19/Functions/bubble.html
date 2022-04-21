@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble</title>
+  </head>
+  <body>
+    <div id="outdiv" class="container">
+      <h1 id="head">My Lists: </h1>
+      <ul id="ulL" class="list">
+        <li id="first" class="item">Lorem, ipsum dolor sit amet</li>
+        <li class="item">Molestias consequatur culpa sunt? Dolore</li>
+        <li class="item">Odit commodi eveniet sint, dolorem facilis!</li>
+        <li class="item">At cum quia nulla laborum eveniet nesciunt!</li>
+        <li class="item">Iure,consequatur eum minus non  illo!</li>
+      </ul>
+      <button id="addBtn">Add</button>
+    </div>
+    <script>
+
+        // way to add item without thinking about adding new item
+        /*var ulListItems = document.getElementsByClassName('item')
+        for (let i = 0; i < ulListItems.length; i++) {
+          const item = ulListItems[i];
+          item.addEventListener('click',function(event){
+            console.log(this.innerText, event.target.innerText);
+            // this.parentNode.removeChild(this);
+            event.target.parentNode.removeChild(event.target);
+          })
+        }*/
+
+
+        document.getElementById('addBtn').addEventListener('click',function(event){
+
+          var parentUL = document.getElementById('ulL');
+          var newItem = document.createElement('li');
+          newItem.innerText = "Brand New Item"
+
+          parentUL.appendChild(newItem);
+        })
+
+        // document.getElementById('first').addEventListener('click',function(){
+        //     console.log("First element clicked");
+        //     event.stopPropagation(); 
+        // })
+
+        document.getElementById('ulL').addEventListener('click',function(){
+            console.log(this, event.target);
+            event.target.parentNode.removeChild(event.target); 
+        })
+
+        // document.getElementById('head').addEventListener('click',function(){
+        //     console.log("Head clicked");
+        // })
+
+        // document.getElementById('outdiv').addEventListener('click',function(){
+        //     console.log("Container clicked");
+        // })
+
+    </script>
+  </body>
+</html>

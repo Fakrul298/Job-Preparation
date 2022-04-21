@@ -1,0 +1,7 @@
+A: Prtty easy
+B: Tricky, but solvable, solved at 45:17 after 2 WA
+C: 1.Seems unsolvable, can't undertand the problem to solve manually
+   2. problem ভুল পরেছিলাম
+   3. maybe solvable, but to think a lot,wait with patience
+   4. trying to implement now
+        5.     মিল্লা গেছে!!  Though after the end of the contest.
