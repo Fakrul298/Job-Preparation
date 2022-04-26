@@ -19,3 +19,9 @@ for(let i = 0; i<imgs.length; i++)
     const randomImg = Math.floor(Math.random() * myImages.length)
     imgs[i].src = myImages[randomImg]
 }
+
+h3s = document.getElementsByTagName("h3")
+for(let i=0; i<h3s.length; i++)
+{
+    h3s[i].innerText = "Hello there, I am Tareq!!";
+}
